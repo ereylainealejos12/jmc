@@ -1,0 +1,11 @@
+{% extends 'jmc/base.html' %}
+
+{% block content %}
+{% for student in obj %}
+    {{student.lName}}
+    {{student.fName}}
+    {{student.email}}
+    {{student.contact}}
+    {{student.course}}<br>
+{% endfor %}
+{% endblock %}

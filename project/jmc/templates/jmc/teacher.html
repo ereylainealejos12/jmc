@@ -1,0 +1,11 @@
+{% extends 'jmc/base.html' %}
+
+{% block content %}
+{% for teacher in obj %}
+    {{teacher.lName}}
+    {{teacher.fName}}
+    {{teacher.email}}
+    {{teacher.contact}}
+    {{teacher.course}}<br>
+{% endfor %}
+{% endblock %}
